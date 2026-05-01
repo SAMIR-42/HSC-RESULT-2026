@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  body{
+    background:#000;
+    height:100vh;
+    width:100%;
+  }
+  
+  /* MOBILE = full screen */
+  .video-container{
+    width:100%;
+    height:100vh;
+  }
+  
+  video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  
+  /* 💻 LAPTOP VIEW */
+  @media (min-width:768px){
+    .video-container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+  
+    video{
+      width:700px;   /* 👈 size control */
+      height:auto;
+      object-fit:contain;
+      border-radius:10px;
+    }
+  }
